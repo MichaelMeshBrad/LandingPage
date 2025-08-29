@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Meta -->
+  <title>404-ish | Domain Holding Page</title>
+  <meta name="description" content="This domain is active but used for email services only. No website is hosted here." />
+  <meta name="author" content="M1 Technology" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Open Graph (for social sharing) -->
+  <meta property="og:title" content="404-ish | M1 Technology Domain Holding Page" />
+  <meta property="og:description" content="This domain is active but reserved for email services only. No website is hosted here." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="img/quirky-404.png" />
+  <meta property="og:site_name" content="M1 Technology" />
+
+  <!-- Styles -->
+  <style>
+    /* Make all elements include padding/border in size */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      background: #f9fafb;
+      color: #111827;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    img {
+      max-width: 180px;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      margin: 0 0 1rem;
+      font-size: 2rem;
+      color: #1f2937;
+    }
+
+    p {
+      margin: 0.5rem 0;
+      color: #374151;
+      font-size: 1.05rem;
+      line-height: 1.5;
+    }
+
+    .contact {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    .contact a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    .note {
+      font-size: 0.8rem;
+      color: #9ca3af;
+      margin-top: 1rem;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 400px) {
+      h1 {
+        font-size: 1.75rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      img {
+        max-width: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="img/quirky-404.png" alt="Quirky 404 Robot Illustration" />
+    <h1>404-ish.</h1>
+    <p>Close, but not an error.<br />This domain simply has no website attached.</p>
+    <p class="contact">
+      For more info, contact <a href="mailto:domains@m1technology.co.uk">domains@m1technology.co.uk</a>
+    </p>
+    <p class="note">&copy; <span id="year"></span> M1 Technology. All rights reserved.</p>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
